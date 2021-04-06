@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-container {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.header-container {
+  background-image: url(/images/mobile/image-hero.jpg);
+  background-size: cover;
+  color: white;
+  padding: 70px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: "Kodchasan", sans-serif;
+  font-size: 40px;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  text-decoration: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+li:hover:before {
+  content: "";
+  background: rgb(255, 255, 255);
+  width: 27px;
+  height: 2px;
+  position: absolute;
+  bottom: 5px;
+  margin-left: 23px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-paragraph {
+  border: 2px solid rgb(255, 255, 255);
+  width: fit-content;
+  font-weight: 100;
+  font-size: 70px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding: 30px 40px;
+}
+
+.main-container {
+  margin: 120px;
+}
+
+.about-loopstudios {
+  position: relative;
+}
+
+.textblock {
+  width: 45%;
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  background-color: white;
+  color: black;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.textblock-paragraph {
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+  color: rgb(95, 95, 95);
+  margin-top: 40px;
+}
+
+.creations-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-weight: 50;
+  font-size: 55px;
+}
+
+button {
+  padding: 12px 30px;
+  margin-top: 20px;
+  width: 20%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 200;
+  background-color: white;
+  border: 2px solid rgb(114, 114, 114);
+  color: black;
+  transition: 150ms ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.creations-items-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.creations-items {
+  width: 25%;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.creations-items:hover {
+  opacity: 0.85;
+  color: black;
+}
+.item-image {
+  width: 90%;
+  height: 60vh;
+  object-fit: cover;
+  opacity: 1;
+  transition: 100ms ease-in-out;
+}
+
+.item-name {
+  position: absolute;
+  bottom: 30px;
+  right: 16px;
+  left: 30px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.see-all {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 50px;
+}
+
+.footer-h2 {
+  color: white;
+}
+
+.footer-links {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.footer-links:hover:before {
+  content: "";
+  background: rgb(255, 255, 255);
+  width: 27px;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  margin-left: 23px;
+}
+
+.contact {
+  text-align: right;
+}
+
+.social-media-links {
+  margin-left: 15px;
+}
+
+.social-media-links:hover:before {
+  content: "";
+  background: rgb(255, 255, 255);
+  width: 27px;
+  height: 2px;
+  position: absolute;
+  bottom: -0px;
+  margin-left: 23px;
+}
+
+.contact-paragraph {
+  color: rgb(128, 128, 128);
+  margin-top: 30px;
+}
+
+@media (max-width: 1100px) {
+  .header-container {
+    background-size: cover;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    height: 25px;
+    margin-top: 10px;
+  }
+
+  .header-paragraph {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding: 30px 0;
+  }
+
+  .main-container {
+    margin: 70px 20px;
+  }
+
+  .about-loopstudios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+
+  .about-loopstudios-image {
+    width: 100%;
+  }
+
+  .textblock {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .textblock-h3 {
+    font-size: 45px;
+  }
+
+  .textblock-paragraph {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  h3 {
+    margin: 20px auto;
+  }
+
+  button {
+    display: none;
+  }
+
+  .creations-header {
+    text-align: center;
+  }
+
+  .creations-items {
+    width: 100%;
+  }
+
+  .creations-items-container {
+    flex-direction: column;
+  }
+
+  .item-image {
+    height: 30vh;
+  }
+
+  .item-name {
+    left: 85px;
+  }
+
+  .see-all {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-ul {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  .footer-links {
+    margin: 10px 0;
+  }
+
+  .contact {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-container {
+    padding: 40px;
+  }
+
+  .header-paragraph {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  .textblock-h3 {
+    font-size: 40px;
+  }
+
+  .textblock-paragraph {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-container {
+    padding: 20px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  .header-paragraph {
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .main-container {
+    margin: 0;
+  }
+
+  .creations-header {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    margin: 0 auto;
+    font-size: 40px;
+  }
+
+  .item-name {
+    left: 30px;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .hamburger-icon {
+    margin: 0;
+    height: 20px;
+  }
+
+  .header-paragraph {
+    font-size: 25px;
+  }
+
+  .textblock-h3 {
+    font-size: 25px;
+  }
+
+  .textblock-paragraph {
+    font-size: 17px;
+  }
+
+  .creations-header {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .see-all {
+    width: 40%;
+  }
+}
