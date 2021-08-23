@@ -24,8 +24,8 @@ h2 {
   font-size: 40px;
 }
 
-.hamburger-icon {
-  display: none;
+.second-h2 {
+  visibility: hidden;
 }
 
 ul {
@@ -45,8 +45,8 @@ li:hover:before {
   width: 27px;
   height: 2px;
   position: absolute;
-  bottom: 5px;
-  margin-left: 23px;
+  bottom: 1rem;
+  margin-left: 15px;
 }
 
 a {
@@ -54,12 +54,21 @@ a {
   text-decoration: none;
 }
 
+.mobile-nav {
+  /* display: none; */
+  visibility: hidden;
+}
+
+/* .hamburger-icon, .hamburger {
+  display: none;
+} */
+
 .header-paragraph {
   border: 2px solid rgb(255, 255, 255);
   width: fit-content;
   font-weight: 100;
   font-size: 70px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-bottom: 30px;
   padding: 30px 40px;
 }
@@ -112,6 +121,7 @@ button {
   border: 2px solid rgb(114, 114, 114);
   color: black;
   transition: 150ms ease-in-out;
+  cursor: pointer;
 }
 
 button:hover {
@@ -132,10 +142,13 @@ button:hover {
   text-align: center;
   color: white;
 }
+
 .creations-items:hover {
-  opacity: 0.85;
-  color: black;
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
 }
+
 .item-image {
   width: 90%;
   height: 60vh;
@@ -173,6 +186,7 @@ footer {
   margin-top: 30px;
   margin-bottom: 20px;
   margin-right: 20px;
+  width: fit-content;
 }
 
 .footer-links:hover:before {
@@ -182,7 +196,7 @@ footer {
   height: 2px;
   position: absolute;
   bottom: -10px;
-  margin-left: 23px;
+  margin-left: 0.5rem;
 }
 
 .contact {
@@ -206,208 +220,4 @@ footer {
 .contact-paragraph {
   color: rgb(128, 128, 128);
   margin-top: 30px;
-}
-
-@media (max-width: 1100px) {
-  .header-container {
-    background-size: cover;
-  }
-
-  ul {
-    display: none;
-  }
-
-  .hamburger-icon {
-    display: block;
-    height: 25px;
-    margin-top: 10px;
-  }
-
-  .header-paragraph {
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    padding: 30px 0;
-  }
-
-  .main-container {
-    margin: 70px 20px;
-  }
-
-  .about-loopstudios {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-  }
-
-  .about-loopstudios-image {
-    width: 100%;
-  }
-
-  .textblock {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 0;
-  }
-
-  .textblock-h3 {
-    font-size: 45px;
-  }
-
-  .textblock-paragraph {
-    font-size: 25px;
-    margin-top: 30px;
-  }
-
-  h3 {
-    margin: 20px auto;
-  }
-
-  button {
-    display: none;
-  }
-
-  .creations-header {
-    text-align: center;
-  }
-
-  .creations-items {
-    width: 100%;
-  }
-
-  .creations-items-container {
-    flex-direction: column;
-  }
-
-  .item-image {
-    height: 30vh;
-  }
-
-  .item-name {
-    left: 85px;
-  }
-
-  .see-all {
-    display: block;
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 15px;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-ul {
-    display: flex;
-    flex-direction: column;
-    margin: 40px 0;
-  }
-
-  .footer-links {
-    margin: 10px 0;
-  }
-
-  .contact {
-    text-align: center;
-  }
-}
-
-@media (max-width: 700px) {
-  .header-container {
-    padding: 40px;
-  }
-
-  .header-paragraph {
-    font-size: 40px;
-    margin-top: 50px;
-  }
-
-  .textblock-h3 {
-    font-size: 40px;
-  }
-
-  .textblock-paragraph {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 450px) {
-  .header-container {
-    padding: 20px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-
-  .header-paragraph {
-    font-size: 30px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-
-  .main-container {
-    margin: 0;
-  }
-
-  .creations-header {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-
-  h3 {
-    margin: 0 auto;
-    font-size: 40px;
-  }
-
-  .item-name {
-    left: 30px;
-  }
-
-  footer {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 330px) {
-  h2 {
-    font-size: 20px;
-  }
-
-  .hamburger-icon {
-    margin: 0;
-    height: 20px;
-  }
-
-  .header-paragraph {
-    font-size: 25px;
-  }
-
-  .textblock-h3 {
-    font-size: 25px;
-  }
-
-  .textblock-paragraph {
-    font-size: 17px;
-  }
-
-  .creations-header {
-    margin-top: 30px;
-    margin-bottom: 0;
-  }
-
-  h3 {
-    font-size: 25px;
-  }
-
-  .see-all {
-    width: 40%;
-  }
 }
